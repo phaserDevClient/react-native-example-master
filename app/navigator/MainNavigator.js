@@ -2,9 +2,9 @@ import React from 'react';
 import {createStackNavigator} from 'react-navigation';
 import Home from '../mainmenu/index';
 import TextHome from '../text/index';
-import ListViewHome from '../listView/flatlist/index';
+import ListViewHome from '../listView/index';
 import TextNavigator from '../text/TextNavigator';
-import ListNavigator from '../listView/flatlist/ListViewStackNavigator';
+import ListNavigator from '../listView/ListViewStackNavigator';
 
 const navigator = createStackNavigator({
     Main: {screen: Home},

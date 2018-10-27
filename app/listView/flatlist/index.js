@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Button, FlatList, ScrollView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-export default class ListViewHome extends Component {
+export default class FlatListHome extends Component {
     static navigationOptions = {
         headerTitle: "ListView",
         headerRight: (
