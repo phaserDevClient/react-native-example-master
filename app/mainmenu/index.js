@@ -29,24 +29,27 @@ export default class Home extends Component {
         // console.log(this.state)
     }
 
+    _onPressButton(item) {
+        if (this.props.navigation.navigate(item.key)) {
+            this.props.navigation.navigate(item.key);
+        } else {
+            alert("Opp!!!!! Please don't");
+        }
+    }
 
     render() {
         return (
             <View style={styles.container}>
-                <Text style={{textAlign: 'center', fontSize: 25}}>This is demo about react-native</Text>
+                <Text style={{textAlign: 'center', fontSize: 25, fontWeight: fontWeight.Medium}}>This is demo about
+                    react-native</Text>
                 <ScrollView>
                     <FlatList
                         data={this.state.data}
                         renderItem={({item}) => (
                             <TouchableOpacity style={styles.buttonContainer}
                             >
-                                <Text style={styles.buttonText} onPress={() => {
-                                    if (this.props.navigation.navigate(item.key)) {
-                                        this.props.navigation.navigate(item.key);
-                                    } else {
-                                        alert("No keys");
-                                    }
-                                }}>{item.key}</Text>
+                                <Text style={styles.buttonText}
+                                      onPress={() => this._onPressButton(item)}>{item.key}</Text>
                             </TouchableOpacity>
                         )}
                     />
@@ -56,6 +59,17 @@ export default class Home extends Component {
     }
 }
 
+const fontWeight = {
+    Thin: "100",
+    UltraLight: "200",
+    Light: "300",
+    Regular: "400",
+    Medium: "500",
+    Semibold: "600",
+    Bold: "700",
+    Heavy: "800",
+    Black: "900"
+};
 
 const styles = StyleSheet.create({
     container: {
@@ -74,6 +88,9 @@ const styles = StyleSheet.create({
     buttonText: {
         justifyContent: 'center',
         alignItems: 'center',
-        textAlign: 'center'
+        textAlign: 'center',
+        color: 'white',
+        fontSize: 20,
+        fontWeight: fontWeight.Semibold
     },
 });

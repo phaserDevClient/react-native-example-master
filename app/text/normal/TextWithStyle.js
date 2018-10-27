@@ -9,8 +9,9 @@ export default class NormalText extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.textStyle}>This is an normal text without styling</Text>
-                <Text style={styles.textStyle1}>This is an normal text without styling</Text>
+                <Text style={styles.textStyle}>This is a text with color</Text>
+                <Text style={styles.textAligns}>This is a text with font size and align center</Text>
+                <Text style={styles.text_align_left}>This is a text with font size and align center</Text>
             </View>
         );
     }
@@ -21,10 +22,16 @@ const styles = StyleSheet.create({
     },
     textStyle: {
         color: 'red',
-        fontSize: 20
+        fontSize: 20,
+        marginBottom: 10
     },
-    textStyle1: {
+    textAligns: {
         fontSize: 25,
         textAlign: 'center'
+    },
+    text_align_left: {
+        fontSize: 20,
+        textAlign: 'left',
+        marginTop: 10
     }
 });

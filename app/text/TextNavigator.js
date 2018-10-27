@@ -1,11 +1,23 @@
 import React from 'react';
-import {createSwitchNavigator} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation';
 
 import NormalText from '../text/normal/NormalText';
 import TextStyling from '../text/normal/TextWithStyle';
 
-const navigator = createSwitchNavigator({
-    TextNormal: {screen: NormalText},
-    TextStyling: {screen: TextStyling}
+const navigator = createStackNavigator({
+    TextNormal: {
+        screen: NormalText,
+        navigationOptions: {
+            title: 'Text',
+            header: null,
+            headerRight: "headerRight"
+        }
+    },
+    TextStyling: {
+        screen: TextStyling,
+        navigationOptions: {
+            header: null
+        }
+    }
 });
 export default navigator;
