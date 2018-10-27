@@ -29,17 +29,21 @@ export default class ListViewHome extends Component {
                         data={[
                             {
                                 key: 'FlatList',
-                                data: 'FlatList'
+                                value: 'FlatList'
                             },
                             {
                                 key: 'SectionList',
-                                data: 'SectionList'
+                                value: 'SectionList'
+                            },
+                            {
+                                key: 'RecyclerListView',
+                                value:'Recycler List View'
                             }
                         ]}
                         renderItem={({item}) => (
                             <TouchableOpacity style={styles.buttonContainer}
                                               onPress={() => this._onPressButton(item)}>
-                                <Text style={styles.buttonText}>{item.data}</Text>
+                                <Text style={styles.buttonText}>{item.value}</Text>
                             </TouchableOpacity>
                         )}/>
                 </ScrollView>
