@@ -7,6 +7,7 @@ import TextNavigator from '../text/TextNavigator';
 import ListNavigator from '../listView/ListViewStackNavigator';
 import VideoNavigator from '../video/VideoStackNavigator';
 import RecyclerNavigator from '../listView/recyclerlistview/RecyclerNavigation';
+import AutoCompleteTextInputNavigator from '../autocompletetext/index';
 
 const navigator = createStackNavigator({
     Main: {screen: Home},
@@ -15,7 +16,8 @@ const navigator = createStackNavigator({
     TextNavigator: TextNavigator,
     ListViewNavigator: ListNavigator,
     VideoNavigator: VideoNavigator,
-    RecyclerNavigator: RecyclerNavigator
+    RecyclerNavigator: RecyclerNavigator,
+    AutoCompleteTextInput: AutoCompleteTextInputNavigator
 
 });
 export default navigator;

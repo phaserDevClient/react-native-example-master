@@ -9,11 +9,11 @@ export default class Home extends Component {
                 {key: 'Text', info: 'Text info'},
                 {key: 'ListView', info: 'Text info'},
                 {key: 'VideoComponent', info: 'Text info'},
-                {key: 'Button', info: 'Text info'},
-                {key: 'Navigator', info: 'Text info'},
-                {key: 'Image', info: 'Text info'},
-                {key: 'Networking', info: 'Text info'},
-                {key: 'Timer', info: 'Text info'},
+                {key: 'AutoCompleteTextInput', info: 'Text info'}
+                // {key: 'Navigator', info: 'Text info'},
+                // {key: 'Image', info: 'Text info'},
+                // {key: 'Networking', info: 'Text info'},
+                // {key: 'Timer', info: 'Text info'},
             ],
             itemClicked: ''
         };
