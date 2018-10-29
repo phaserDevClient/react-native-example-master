@@ -24,8 +24,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.reactnative.example1"
     },
-    "githubUrl": "https://github.com/phaserDevClient/react-native-example-master"
+    "githubUrl": "https://github.com/phaserDevClient/react-native-example-master",
+    "android": {
+      "package": "com.reactnative.example1",
+      "googleServicesFile": "./assets/google-services.json"
+    }
   }
 }

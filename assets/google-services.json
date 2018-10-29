@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "269899124016",
+    "firebase_url": "https://awesomechatapp-293f7.firebaseio.com",
+    "project_id": "awesomechatapp-293f7",
+    "storage_bucket": "awesomechatapp-293f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269899124016:android:62ee688a0107e26e",
+        "android_client_info": {
+          "package_name": "com.reactnative.example1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269899124016-1181vpkl52a52ot4auaghfgo1mjq935j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1xVhELfXGDPTfn-IWJcxUV8geHq1jy2U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
