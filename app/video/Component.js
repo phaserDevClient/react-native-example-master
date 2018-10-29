@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Video} from 'expo';
-import {StyleSheet, View, WebView, Dimensions} from 'react-native';
+import {Dimensions, StyleSheet, View, WebView} from 'react-native';
+import VideoPlayer from '@expo/videoplayer';
 
 const windowWidth = Dimensions.get('window');
 export default class VideoComponent extends Component {
@@ -41,8 +42,24 @@ export default class VideoComponent extends Component {
                 //     uri: 'https://www.youtube.com/embed/cBVGlBWQzuc?autoplay=1'
                 // }}
                 source={{
-                    html:"<html><body><iframe style='align-content: center; align-items: center; width: 560px; height: 315px; position: relative' src=\"https://www.youtube.com/embed/P_C0HdWlvZA?autoplay=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\"></iframe></body></html>"
+                    html: "<html><body><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Nf3qjMc5cXw\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe></body></html>"
                 }}
+            />
+        );
+    }
+
+    renderExpoVideoPlayer() {
+        return (
+            <VideoPlayer
+                videoProps={{
+                    shouldPlay: true,
+                    resizeMode: Video.RESIZE_MODE_COVER,
+                    source: {
+                        uri: "https://youtu.be/Nf3qjMc5cXw"
+                    }
+                }}
+                isPortrait={true}
+
             />
         );
     }
@@ -56,6 +73,9 @@ export default class VideoComponent extends Component {
                 <View>
                     {this.renderYouTubeVideo()}
                 </View>
+                {/*<View style={styles.expoVideoContainer}>*/}
+                {/*{this.renderExpoVideoPlayer()}*/}
+                {/*</View>*/}
             </View>
         );
     }
@@ -80,6 +100,10 @@ var styles = StyleSheet.create({
     },
     videoContainer: {
         paddingTop: 315,
+        top: 315,
+        backgroundColor: '#ecf0f1',
+    },
+    expoVideoContainer: {
         top: 315,
         backgroundColor: '#ecf0f1',
     }
