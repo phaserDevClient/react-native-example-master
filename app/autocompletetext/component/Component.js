@@ -7,7 +7,7 @@ const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII'];
 
 export default class TextInputAutoComplete extends Component {
     static renderFilm(film) {
-        const {title, director, opening_crawl, episode_id, producer, release_date, characters} = film;
+        const {title, director, opening_crawl, episode_id, producer, release_date} = film;
         const roman = episode_id < ROMAN.length ? ROMAN[episode_id] : episode_id;
 
         return (
@@ -17,7 +17,6 @@ export default class TextInputAutoComplete extends Component {
                     <Text style={styles.directorText}>Director: ({director})</Text>
                     <Text style={styles.producerText}>Producer: {producer}</Text>
                     <Text style={styles.releaseDateText}>Release Date: {release_date}</Text>
-                    {/*<Text style={styles.characterText}>{characters}</Text>*/}
                     <Text style={styles.openingText}>{opening_crawl}</Text>
                 </ScrollView>
             </View>
