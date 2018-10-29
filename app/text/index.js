@@ -8,7 +8,7 @@ export default class TextHome extends Component {
             <Button
                 onPress={() => alert('This is a button!')}
                 title="Info"
-                color="#fff"
+                color="#000"
             />
         ),
     };

@@ -8,7 +8,7 @@ export default class ListViewHome extends Component {
             <Button
                 onPress={() => alert('This is a button!')}
                 title="Info"
-                color="#fff"
+                color="#000"
             />
         ),
     };
