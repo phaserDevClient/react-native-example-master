@@ -2,7 +2,7 @@ import React from 'react';
 import {createStackNavigator} from 'react-navigation'
 
 import RecyclerListView from './RecyclerBasic';
-import RecyclerListViewWithData from './recyclerwithdata/index'
+import RecyclerListViewData from './recyclertravel/index';
 
 const navigation = createStackNavigator({
     RecylerListView: {
@@ -11,8 +11,8 @@ const navigation = createStackNavigator({
             header: null
         }
     },
-    RecylerListViewData: {
-        screen: RecyclerListViewWithData,
+    RecyclerListViewData: {
+        screen: RecyclerListViewData,
         navigationOptions: {
             header: null
         }

@@ -25,8 +25,8 @@ export default class RecyclerListViewHome extends Component {
                                 data: 'Recycler'
                             },
                             {
-                                key: 'RecylerListViewData',
-                                data: 'Recycler with data'
+                                key: 'RecyclerListViewData',
+                                data: 'ListData'
                             }]}
                         renderItem={({item}) => (
                             <TouchableOpacity style={styles.buttonContainer}

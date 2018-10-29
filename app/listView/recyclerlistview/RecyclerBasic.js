@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Dimensions, StyleSheet, Text, View} from "react-native";
+import {Dimensions, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import {DataProvider, LayoutProvider, RecyclerListView} from "recyclerlistview";
 
 const ViewTypes = {
@@ -23,7 +23,7 @@ class CellContainer extends Component {
     render() {
         return (
             <View {...this.props}>{this.props.children}
-                <Text onPress={({item}) => this.onPressButton(item)}>
+                <Text onPress={() => this.onPressButton(this._containerId)}>
                     Cell Id: {this._containerId}
                 </Text>
             </View>
@@ -100,9 +100,10 @@ export default class RecyclerListViewScreen extends Component {
         //You can return any view here, CellContainer has no special significance
         switch (type) {
             case ViewTypes.HALF_LEFT:
-                return (<CellContainer style={styles.containerGridLeft}>
-                    <Text>Data: {data}</Text>
-                </CellContainer>);
+                return (
+                        <CellContainer style={styles.containerGridLeft}>
+                            <Text>Data: {data}</Text>
+                        </CellContainer>);
             case ViewTypes.HALF_RIGHT:
                 return (<CellContainer style={styles.containerGridRight}>
                     <Text>Data: {data}</Text>
