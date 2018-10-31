@@ -1,3 +1,4 @@
+import React from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {createBottomTabNavigator} from 'react-navigation';
 import HomeBottomMenu from './component/HomeBottom';

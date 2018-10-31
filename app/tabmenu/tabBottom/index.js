@@ -1,3 +1,3 @@
-import TabBottom from './TabBottomNavigationExample'
+import TabBottom from './TabBottomNavigationExample';
 
 export default TabBottom;

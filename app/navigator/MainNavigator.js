@@ -10,6 +10,7 @@ import RecyclerNavigator from '../listView/recyclerlistview/RecyclerNavigation';
 import AutoCompleteTextInputNavigator from '../autocompletetext/index';
 import NavigationDrawer from '../drawermenu/index';
 import TabNavigation from '../tabmenu/TabMenuNavigation';
+import FAB from '../fab/index';
 
 const navigator = createStackNavigator({
     Main: {screen: Home},
@@ -21,7 +22,8 @@ const navigator = createStackNavigator({
     RecyclerNavigator: RecyclerNavigator,
     AutoCompleteTextInput: AutoCompleteTextInputNavigator,
     NavigationDrawer: NavigationDrawer,
-    TabNavigation: TabNavigation
+    TabNavigation: TabNavigation,
+    FAB: FAB
 
 });
 export default navigator;

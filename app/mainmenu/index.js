@@ -11,7 +11,8 @@ export default class Home extends Component {
                 {key: 'VideoComponent', info: 'Text info'},
                 {key: 'AutoCompleteTextInput', info: 'Text info'},
                 {key: 'NavigationDrawer', info: 'Text info'},
-                // {key: 'TabNavigation', info: 'Tab Navigation'}
+                {key: 'TabNavigation', info: 'Tab Navigation'},
+                {key: 'FAB', info: 'FAB'}
                 // {key: 'Image', info: 'Text info'},
                 // {key: 'Networking', info: 'Text info'},
                 // {key: 'Timer', info: 'Text info'},
