@@ -9,7 +9,7 @@ export function getTouchableComponent(useNativeFeedback = true) {
     return TouchableOpacity;
 }
 
-export function getRippleColor(color, useNativeFeedback = true) {
+export function getRippleProps(color, useNativeFeedback = true) {
 // less than API 21 don't support Ripple
     if (useNativeFeedback === true && isAndroid === true && Platform.Version >= 21) {
         return {
