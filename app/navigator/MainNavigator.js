@@ -11,6 +11,7 @@ import AutoCompleteTextInputNavigator from '../autocompletetext/index';
 import NavigationDrawer from '../drawermenu/index';
 import TabNavigation from '../tabmenu/TabMenuNavigation';
 import FAB from '../fab/index';
+import FABNavigation from '../fab/FloatingButtonStackNavigator';
 
 const navigator = createStackNavigator({
     Main: {screen: Home},
@@ -23,7 +24,8 @@ const navigator = createStackNavigator({
     AutoCompleteTextInput: AutoCompleteTextInputNavigator,
     NavigationDrawer: NavigationDrawer,
     TabNavigation: TabNavigation,
-    FAB: FAB
+    FAB: {screen: FAB},
+    FABNavigation: FABNavigation
 
 });
 export default navigator;
