@@ -13,7 +13,8 @@ import TabNavigation from '../tabmenu/TabMenuNavigation';
 import FAB from '../fab/index';
 import FABNavigation from '../fab/FloatingButtonStackNavigator';
 import SimpleToast from '../toast/index';
-import TableViewNagigation from '../tableview/example/TableViewStackNavigation';
+import TableViewNavigation from '../tableview/example/TableViewStackNavigation';
+import MapView from '../mapview/index';
 
 const navigator = createStackNavigator({
     Main: {screen: Home},
@@ -29,7 +30,8 @@ const navigator = createStackNavigator({
     FAB: {screen: FAB},
     FABNavigation: FABNavigation,
     Toast: SimpleToast,
-    TableView: TableViewNagigation
+    TableView: TableViewNavigation,
+    MapView: MapView
 
 });
 export default navigator;
