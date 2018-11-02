@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, ToastAndroid, View} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import ActionButton from './ActionButton';
 
@@ -13,6 +13,23 @@ export default class FABButton extends Component {
                 <ActionButton buttonColor={"rgba(231,76,60,1)"}>
                     <ActionButton.Item buttonColor={"#9b59b6"} title={"New Task"} onPress={() => {
                         console.log("Note tapped!");
+                        if (Platform.OS === 'android') {
+                            ToastAndroid.show('A pikachu appeared nearby !', ToastAndroid.SHORT);
+
+                            ToastAndroid.showWithGravity(
+                                'All Your Base Are Belong To Us',
+                                ToastAndroid.SHORT,
+                                ToastAndroid.CENTER
+                            );
+
+                            ToastAndroid.showWithGravityAndOffset(
+                                'A wild toast appeared!',
+                                ToastAndroid.LONG,
+                                ToastAndroid.BOTTOM,
+                                25,
+                                50
+                            );
+                        }
                     }}>
                         <Icon name={"md-create"} style={styles.actionButtonIcon}/>
                     </ActionButton.Item>

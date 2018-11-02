@@ -12,7 +12,8 @@ export default class Home extends Component {
                 {key: 'AutoCompleteTextInput', info: 'Text info'},
                 {key: 'NavigationDrawer', info: 'Text info'},
                 {key: 'TabNavigation', info: 'Tab Navigation'},
-                {key: 'FAB', info: 'FAB'}
+                {key: 'FAB', info: 'FAB'},
+                {key: 'Toast', info: 'Simple Toast'}
                 // {key: 'Image', info: 'Text info'},
                 // {key: 'Networking', info: 'Text info'},
                 // {key: 'Timer', info: 'Text info'},
