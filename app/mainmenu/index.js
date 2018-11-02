@@ -6,14 +6,15 @@ export default class Home extends Component {
         super(props);
         this.state = {
             data: [
-                {key: 'Text', info: 'Text info'},
-                {key: 'ListView', info: 'Text info'},
-                {key: 'VideoComponent', info: 'Text info'},
-                {key: 'AutoCompleteTextInput', info: 'Text info'},
-                {key: 'NavigationDrawer', info: 'Text info'},
+                {key: 'Text', info: 'Text Example'},
+                {key: 'ListView', info: 'List View Example'},
+                {key: 'VideoComponent', info: 'Video Example'},
+                {key: 'AutoCompleteTextInput', info: 'Auto Complete Text'},
+                {key: 'NavigationDrawer', info: 'Navigation Drawer'},
                 {key: 'TabNavigation', info: 'Tab Navigation'},
-                {key: 'FAB', info: 'FAB'},
-                {key: 'Toast', info: 'Simple Toast'}
+                {key: 'FAB', info: 'Floating Button Action'},
+                {key: 'Toast', info: 'Simple Toast'},
+                {key: 'TableView', info: 'Table View'}
                 // {key: 'Image', info: 'Text info'},
                 // {key: 'Networking', info: 'Text info'},
                 // {key: 'Timer', info: 'Text info'},
@@ -52,7 +53,7 @@ export default class Home extends Component {
                             <TouchableOpacity style={styles.buttonContainer}
                             >
                                 <Text style={styles.buttonText}
-                                      onPress={() => this._onPressButton(item)}>{item.key}</Text>
+                                      onPress={() => this._onPressButton(item)}>{item.info}</Text>
                             </TouchableOpacity>
                         )}
                     />
