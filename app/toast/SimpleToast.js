@@ -167,20 +167,33 @@
 // });
 //
 import React, {Component} from 'react';
-import {StyleSheet, Text, TouchableHighlight, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import Toast from './Toast';
 
 export default class SimpleToast extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <TouchableHighlight style={{padding: 10}}
-                                    onPress={() => {
+                <TouchableOpacity style={{padding: 10}}
+                                  onPress={() => {
                                         this.refs.toast.showToast('Hello world');
                                     }}>
                     <Text>Press me!!!</Text>
-                </TouchableHighlight>
-                <Toast ref={"toast"}
+                </TouchableOpacity>
+                /*Toast normal*/
+                {/*<Toast ref={"toast"}*/}
+                       {/*style={{backgroundColor: '#2487DB'}}/>*/}
+
+                       /*Toast custom*/
+                <Toast
+                    ref="toast"
+                    style={{backgroundColor:'red'}}
+                    position='top'
+                    positionValue={200}
+                    fadeInDuration={750}
+                    fadeOutDuration={1000}
+                    opacity={0.8}
+                    textStyle={{color:'white'}}
                 />
             </View>
         );

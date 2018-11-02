@@ -17,7 +17,7 @@ export default createBottomTabNavigator(
                 if (routeName === 'HomeBottomMenu') {
                     iconName = `ios-information-circle${focused ? '' : '-outline'}`;
                 } else if (routeName === 'SettingsBottomMenu') {
-                    iconName = `ios-options${focused ? '' : '-outline'}`;
+                    iconName = `${focused ? 'ios-options' : 'md-options'}`;
                 }
 
                 // You can return any component that you like here! We usually use an
