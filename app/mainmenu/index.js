@@ -15,7 +15,8 @@ export default class Home extends Component {
                 {key: 'FAB', info: 'Floating Button Action'},
                 {key: 'Toast', info: 'Simple Toast'},
                 {key: 'TableView', info: 'Table View'},
-                {key: 'MapView', info: 'Map View'}
+                {key: 'MapView', info: 'Map View'},
+                {key: 'InputExample', info: 'Input Example'}
                 // {key: 'Image', info: 'Text info'},
                 // {key: 'Networking', info: 'Text info'},
                 // {key: 'Timer', info: 'Text info'},

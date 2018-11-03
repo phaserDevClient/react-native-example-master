@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import styles from './Styles';
 import {NavigationActions} from 'react-navigation';
 import {ScrollView, Text, View} from 'react-native';
-import { StackNavigator } from 'react-navigation';
 
 class SideMenu extends Component{
 

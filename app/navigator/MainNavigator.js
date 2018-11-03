@@ -15,6 +15,7 @@ import FABNavigation from '../fab/FloatingButtonStackNavigator';
 import SimpleToast from '../toast/index';
 import TableViewNavigation from '../tableview/example/TableViewStackNavigation';
 import MapView from '../mapview/index';
+import InputExample from '../exmaplemodel/index';
 
 const navigator = createStackNavigator({
     Main: {screen: Home},
@@ -31,7 +32,8 @@ const navigator = createStackNavigator({
     FABNavigation: FABNavigation,
     Toast: SimpleToast,
     TableView: TableViewNavigation,
-    MapView: MapView
+    MapView: MapView,
+    InputExample: InputExample
 
 });
 export default navigator;

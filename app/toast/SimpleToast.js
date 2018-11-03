@@ -167,36 +167,51 @@
 // });
 //
 import React, {Component} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Platform, StyleSheet, Text, ToastAndroid, TouchableOpacity, View} from 'react-native';
 import Toast from './Toast';
+// import Toast from 'react-native-easy-toast';
 
 export default class SimpleToast extends Component {
     render() {
-        return (
+
+        if (Platform.OS === 'ios') {
+            return (
             <View style={styles.container}>
                 <TouchableOpacity style={{padding: 10}}
                                   onPress={() => {
-                                        this.refs.toast.showToast('Hello world');
-                                    }}>
+                                      this.refs.toast.showToast('Hello world');
+                                  }}>
                     <Text>Press me!!!</Text>
                 </TouchableOpacity>
                 /*Toast normal*/
                 {/*<Toast ref={"toast"}*/}
-                       {/*style={{backgroundColor: '#2487DB'}}/>*/}
+                {/*style={{backgroundColor: '#2487DB'}}/>*/}
 
-                       /*Toast custom*/
+                /*Toast custom*/
                 <Toast
                     ref="toast"
-                    style={{backgroundColor:'red'}}
+                    style={{backgroundColor: 'red'}}
                     position='top'
                     positionValue={200}
                     fadeInDuration={750}
                     fadeOutDuration={1000}
                     opacity={0.8}
-                    textStyle={{color:'white'}}
+                    textStyle={{color: 'white'}}
                 />
             </View>
-        );
+            );
+        } else {
+            return (
+                <View style={styles.container}>
+                    <TouchableOpacity style={{padding: 10}}
+                                      onPress={() => {
+                                          ToastAndroid.show("This is toast from android");
+                                      }}>
+                        <Text>Press me!!!</Text>
+                    </TouchableOpacity>
+                </View>
+            );
+        }
     }
 }
 

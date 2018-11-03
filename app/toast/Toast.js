@@ -88,11 +88,8 @@ export default class EasyToast extends Component {
         const view = this.state.isShow ?
             <View
                 style={[styles.container, {top: pos}]}
-                pointerEvents="none"
-            >
-                <Animated.View
-                    style={[styles.content, {opacity: this.state.opacityValue}, this.props.style]}
-                >
+                pointerEvents="none">
+                <Animated.View style={[styles.content, {opacity: this.state.opacityValue}, this.props.style]}>
                     {React.isValidElement(this.state.message) ? this.state.message :
                         <Text style={this.props.textStyle}>{this.state.message}</Text>}
                 </Animated.View>
