@@ -16,7 +16,8 @@ export default class Home extends Component {
                 {key: 'Toast', info: 'Simple Toast'},
                 {key: 'TableView', info: 'Table View'},
                 {key: 'MapView', info: 'Map View'},
-                {key: 'InputExample', info: 'Input Example'}
+                {key: 'InputExample', info: 'Input Example'},
+                {key: 'ScreenTransition', info: 'Srceen Transition'}
                 // {key: 'Image', info: 'Text info'},
                 // {key: 'Networking', info: 'Text info'},
                 // {key: 'Timer', info: 'Text info'},

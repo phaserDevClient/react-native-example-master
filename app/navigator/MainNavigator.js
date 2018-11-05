@@ -16,6 +16,7 @@ import SimpleToast from '../toast/index';
 import TableViewNavigation from '../tableview/example/TableViewStackNavigation';
 import MapView from '../mapview/index';
 import InputExample from '../exmaplemodel/index';
+import ScreenTrans from '../screentransition/index';
 
 const navigator = createStackNavigator({
     Main: {screen: Home},
@@ -33,7 +34,7 @@ const navigator = createStackNavigator({
     Toast: SimpleToast,
     TableView: TableViewNavigation,
     MapView: MapView,
-    InputExample: InputExample
-
+    InputExample: InputExample,
+    ScreenTransition: ScreenTrans
 });
 export default navigator;
