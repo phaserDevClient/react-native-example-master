@@ -6,12 +6,12 @@ import {
     View, TouchableOpacity
 } from 'react-native';
 
-import { StackNavigator } from  'react-navigation';
+import { createStackNavigator } from  'react-navigation';
 import IOSIcon from "react-native-vector-icons/Ionicons";
 import MainScreen from "./MainScreen";
 import DetailScreen from "./DetailScreen";
 
-const stackNav = StackNavigator({
+const stackNav = createStackNavigator({
     Main : {
         screen: MainScreen,
         navigationOptions: ({navigation}) => ({

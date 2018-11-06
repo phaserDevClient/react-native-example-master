@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
-import {ActivityIndicator, Dimensions, FlatList, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {ActivityIndicator, Button, Dimensions, FlatList, SafeAreaView, StyleSheet, Text, View} from 'react-native';
 
 const dimen = Dimensions.get('window');
 export default class FlatLists extends Component {
+    static navigationOptions = {
+        headerTitle: "Flast list"
+    };
     constructor(props) {
         super(props);
         this.state = {

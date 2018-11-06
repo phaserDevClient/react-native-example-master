@@ -3,27 +3,33 @@ import {createStackNavigator} from 'react-navigation';
 import FlatList from './flatlist/FlatList';
 import SectionList from './sectionlist/index';
 import RecyclerList from './recyclerlistview/index';
+import {Platform} from "react-native";
 
-const ListViewStackNavigator = createStackNavigator({
+const ListViewStackNavigator = createStackNavigator(
+    {
     FlatList: {
         screen: FlatList,
-        navigationOptions: {
-            header: null
-        }
     },
     SectionList: {
         screen: SectionList,
-        navigationOptions: {
-            header: null
-        }
     },
     RecyclerListView: {
         screen: RecyclerList,
-        navigationOptions: {
-            header: null
-        }
     }
 
-});
+    },
+    {
+        headerMode: 'modal',
+        mode: Platform.OS === "ios" ? "modal" : "card",
+        navigationOptions: {
+            cardStack: {
+                gesturesEnabled: false
+            },
+            gesturesEnabled: false,
+            headerBackTitle: null
+        },
+        gesturesEnabled: false,
+    }
+);
 
 export default ListViewStackNavigator;

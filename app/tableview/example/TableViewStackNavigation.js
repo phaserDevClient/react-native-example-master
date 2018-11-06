@@ -1,4 +1,4 @@
-import { StackNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation';
 import Home from './components/home';
 import ExampleOne from './components/exampleOne';
 import ExampleTwo from './components/exampleTwo';
@@ -20,7 +20,7 @@ const stackNavigatorConfig = {
     }
 };
 
-export default StackNavigator ({
+export default createStackNavigator ({
     TableViewHome: {
         screen: Home
     },
