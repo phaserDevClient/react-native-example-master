@@ -14,7 +14,7 @@ export default class Home extends Component {
                 {key: 'TabNavigation', info: 'Tab Navigation'},
                 {key: 'FAB', info: 'Floating Button Action'},
                 {key: 'Toast', info: 'Simple Toast'},
-                {key: 'TableView', info: 'Table View'},
+                {key: 'TableView', info: 'Table View + Drawer Menu'},
                 {key: 'MapView', info: 'Map View'},
                 {key: 'InputExample', info: 'Input Example'},
                 {key: 'ScreenTransition', info: 'Srceen Transition'},

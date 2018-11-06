@@ -173,7 +173,6 @@ import Toast from './Toast';
 
 export default class SimpleToast extends Component {
     render() {
-
         if (Platform.OS === 'ios') {
             return (
             <View style={styles.container}>
@@ -205,7 +204,20 @@ export default class SimpleToast extends Component {
                 <View style={styles.container}>
                     <TouchableOpacity style={{padding: 10}}
                                       onPress={() => {
-                                          ToastAndroid.show("This is toast from android");
+                                          ToastAndroid.showWithGravityAndOffset(
+                                              'A wild toast appeared!',
+                                              ToastAndroid.LONG,
+                                              ToastAndroid.BOTTOM,
+                                              25,
+                                              50,
+                                          );
+                                          ToastAndroid.showWithGravityAndOffset(
+                                              'A wild toast appeared!',
+                                              ToastAndroid.LONG,
+                                              ToastAndroid.TOP,
+                                              25,
+                                              50,
+                                          );
                                       }}>
                         <Text>Press me!!!</Text>
                     </TouchableOpacity>
