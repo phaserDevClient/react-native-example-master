@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {FlatList, ScrollView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {FlatList, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
 export default class Home extends Component {
     constructor(props) {
@@ -17,7 +17,8 @@ export default class Home extends Component {
                 {key: 'TableView', info: 'Table View'},
                 {key: 'MapView', info: 'Map View'},
                 {key: 'InputExample', info: 'Input Example'},
-                {key: 'ScreenTransition', info: 'Srceen Transition'}
+                {key: 'ScreenTransition', info: 'Srceen Transition'},
+                {key: 'Swiper', info: 'Swiper'}
                 // {key: 'Image', info: 'Text info'},
                 // {key: 'Networking', info: 'Text info'},
                 // {key: 'Timer', info: 'Text info'},
@@ -46,22 +47,24 @@ export default class Home extends Component {
 
     render() {
         return (
-            <View style={styles.container}>
-                <Text style={{textAlign: 'center', fontSize: 25, fontWeight: fontWeight.Medium}}>This is demo about
-                    react-native</Text>
-                <ScrollView>
-                    <FlatList
-                        data={this.state.data}
-                        renderItem={({item}) => (
-                            <TouchableOpacity style={styles.buttonContainer}
-                            >
-                                <Text style={styles.buttonText}
-                                      onPress={() => this._onPressButton(item)}>{item.info}</Text>
-                            </TouchableOpacity>
-                        )}
-                    />
-                </ScrollView>
-            </View>
+            <SafeAreaView style={styles.container}>
+                <View style={styles.container}>
+                    <Text style={{textAlign: 'center', fontSize: 25, fontWeight: fontWeight.Medium}}>This is demo about
+                        react-native</Text>
+                    <ScrollView>
+                        <FlatList
+                            data={this.state.data}
+                            renderItem={({item}) => (
+                                <TouchableOpacity style={styles.buttonContainer}
+                                >
+                                    <Text style={styles.buttonText}
+                                          onPress={() => this._onPressButton(item)}>{item.info}</Text>
+                                </TouchableOpacity>
+                            )}
+                        />
+                    </ScrollView>
+                </View>
+            </SafeAreaView>
         );
     }
 }

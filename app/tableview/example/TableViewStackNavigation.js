@@ -1,4 +1,4 @@
-import { createStackNavigator } from 'react-navigation';
+import {createDrawerNavigator, createStackNavigator} from 'react-navigation';
 import Home from './components/home';
 import ExampleOne from './components/exampleOne';
 import ExampleTwo from './components/exampleTwo';
@@ -19,8 +19,27 @@ const stackNavigatorConfig = {
         }
     }
 };
-
-export default createStackNavigator ({
+const Navigation = createDrawerNavigator({
+    TableViewHome: {
+        screen: Home
+    },
+    ExampleOne: {
+        screen: ExampleOne
+    },
+    ExampleTwo: {
+        screen: ExampleTwo
+    },
+    ExampleThree: {
+        screen: ExampleThree
+    },
+    ExampleFour: {
+        screen: ExampleFour
+    },
+    ExampleFive: {
+        screen: ExampleFive
+    }
+});
+const stack = createStackNavigator({
     TableViewHome: {
         screen: Home
     },
@@ -40,3 +59,4 @@ export default createStackNavigator ({
         screen: ExampleFive
     }
 }, stackNavigatorConfig);
+export default Navigation;

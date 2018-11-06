@@ -20,7 +20,9 @@ export default class TableViewHome extends Component {
             'ExampleFive'
         ];
         return (
+
             <View style={styles.container}>
+                <Text style={[styles.text, {marginBottom: 10, color: '#000'}]}>Demo</Text>
                 {
                     routes.map((route, index) => (
                         <TouchableOpacity key={index} style={styles.button}

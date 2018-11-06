@@ -17,6 +17,7 @@ import TableViewNavigation from '../tableview/example/TableViewStackNavigation';
 import MapView from '../mapview/index';
 import InputExample from '../exmaplemodel/index';
 import ScreenTrans from '../screentransition/index';
+import SwiperCustom from '../swiper/index';
 
 const navigator = createStackNavigator({
     Main: {screen: Home},
@@ -35,6 +36,7 @@ const navigator = createStackNavigator({
     TableView: TableViewNavigation,
     MapView: MapView,
     InputExample: InputExample,
-    ScreenTransition: ScreenTrans
+    ScreenTransition: ScreenTrans,
+    Swiper: SwiperCustom
 });
 export default navigator;

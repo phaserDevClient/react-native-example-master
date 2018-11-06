@@ -8,7 +8,7 @@ import {Platform} from "react-native";
 const ListViewStackNavigator = createStackNavigator(
     {
     FlatList: {
-        screen: FlatList,
+        screen: FlatList
     },
     SectionList: {
         screen: SectionList,
