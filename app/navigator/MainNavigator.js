@@ -18,6 +18,7 @@ import MapView from '../mapview/index';
 import InputExample from '../exmaplemodel/index';
 import ScreenTrans from '../screentransition/index';
 import SwiperCustom from '../swiper/index';
+import ModalExample from '../modal/index';
 
 const navigator = createStackNavigator({
     Main: {screen: Home},
@@ -37,6 +38,7 @@ const navigator = createStackNavigator({
     MapView: MapView,
     InputExample: InputExample,
     ScreenTransition: ScreenTrans,
-    Swiper: SwiperCustom
+    Swiper: SwiperCustom,
+    Modals: ModalExample
 });
 export default navigator;

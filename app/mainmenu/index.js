@@ -18,7 +18,8 @@ export default class Home extends Component {
                 {key: 'MapView', info: 'Map View'},
                 {key: 'InputExample', info: 'Input Example'},
                 {key: 'ScreenTransition', info: 'Srceen Transition'},
-                {key: 'Swiper', info: 'Swiper'}
+                {key: 'Swiper', info: 'Swiper'},
+                {key: 'Modals', info: 'Modal Example'}
                 // {key: 'Image', info: 'Text info'},
                 // {key: 'Networking', info: 'Text info'},
                 // {key: 'Timer', info: 'Text info'},
