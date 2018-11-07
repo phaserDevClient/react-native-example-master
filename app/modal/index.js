@@ -1,5 +1,15 @@
 import React, {Component} from 'react';
-import {Alert, Modal, StyleSheet, Text, TouchableHighlight, View} from 'react-native';
+import {Alert, Modal, StyleSheet, Text, TextInput, TouchableHighlight, View} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
+// import Ionicons from 'react-native-vector-icons/Ionicons';
+
+const customTextButton = (
+    <Icon.Button name="facebook" backgroundColor="#3b5998">
+        <Text style={{fontFamily: 'Arial', fontSize: 15, color: "#fff"}} onPress={()=>{
+            Alert.alert("Login With Facebook");
+        }}>Login with Facebook</Text>
+    </Icon.Button>
+);
 
 export default class ModalExample extends Component {
     constructor(props) {
@@ -36,11 +46,13 @@ export default class ModalExample extends Component {
                             alignItems: 'center'
                         }}>
                             <Text>Hello world!</Text>
-                            <TouchableHighlight onPress={() => {
-                                this.setModalVisible(!this.state.modalVisible);
-                            }}>
-                                <Text>Hide Modal</Text>
-                            </TouchableHighlight>
+                            <TextInput placeholder={"Input your name"} style={styles.input}/>
+                            {customTextButton}
+                            {/*<TouchableHighlight onPress={() => {*/}
+                            {/*this.setModalVisible(!this.state.modalVisible);*/}
+                            {/*}}>*/}
+                            {/*<Text>Hide Modal</Text>*/}
+                            {/*</TouchableHighlight>*/}
                         </View>
                     </View>
                 </Modal>
@@ -59,5 +71,8 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    input: {
+        borderWidth: 1
     }
 });
