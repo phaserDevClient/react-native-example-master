@@ -19,6 +19,7 @@ import InputExample from '../exmaplemodel/index';
 import ScreenTrans from '../screentransition/index';
 import SwiperCustom from '../swiper/index';
 import ModalExample from '../modal/index';
+import DragButton from '../dragfloatingbuttonaction/index';
 
 const navigator = createStackNavigator({
     Main: {screen: Home},
@@ -39,6 +40,7 @@ const navigator = createStackNavigator({
     InputExample: InputExample,
     ScreenTransition: ScreenTrans,
     Swiper: SwiperCustom,
-    Modals: ModalExample
+    Modals: ModalExample,
+    DragOpacity: DragButton
 });
 export default navigator;

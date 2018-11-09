@@ -48,11 +48,11 @@ export default class ModalExample extends Component {
                             <Text>Hello world!</Text>
                             <TextInput placeholder={"Input your name"} style={styles.input}/>
                             {customTextButton}
-                            {/*<TouchableHighlight onPress={() => {*/}
-                            {/*this.setModalVisible(!this.state.modalVisible);*/}
-                            {/*}}>*/}
-                            {/*<Text>Hide Modal</Text>*/}
-                            {/*</TouchableHighlight>*/}
+                            <TouchableHighlight onPress={() => {
+                            this.setModalVisible(!this.state.modalVisible);
+                            }}>
+                            <Text>Hide Modal</Text>
+                            </TouchableHighlight>
                         </View>
                     </View>
                 </Modal>

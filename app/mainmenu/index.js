@@ -19,7 +19,8 @@ export default class Home extends Component {
                 {key: 'InputExample', info: 'Input Example'},
                 {key: 'ScreenTransition', info: 'Srceen Transition'},
                 {key: 'Swiper', info: 'Swiper'},
-                {key: 'Modals', info: 'Modal Example'}
+                {key: 'Modals', info: 'Modal Example'},
+                // {key: 'DragOpacity', info: 'Button Drag'}
                 // {key: 'Image', info: 'Text info'},
                 // {key: 'Networking', info: 'Text info'},
                 // {key: 'Timer', info: 'Text info'},
